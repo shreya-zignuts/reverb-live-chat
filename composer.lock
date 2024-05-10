@@ -1364,7 +1364,7 @@
                 "phpunit/phpunit": "Required to use assertions and run tests (^10.5|^11.0).",
                 "predis/predis": "Required to use the predis connector (^2.0.2).",
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
-                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^6.0|^7.0).",
+                "/-php-server": "Required to use the  broadcast driver (^6.0|^7.0).",
                 "resend/resend-php": "Required to enable support for the Resend mail transport (^0.10.0).",
                 "symfony/cache": "Required to PSR-6 cache bridge (^7.0).",
                 "symfony/filesystem": "Required to enable support for relative symbolic links (^7.0).",
@@ -1499,7 +1499,7 @@
                 "illuminate/support": "^10.47|^11.0",
                 "laravel/prompts": "^0.1.15",
                 "php": "^8.2",
-                "pusher/pusher-php-server": "^7.2",
+                "/-php-server": "^7.2",
                 "ratchet/rfc6455": "^0.3.1",
                 "react/promise-timer": "^1.10",
                 "react/socket": "^1.14",
@@ -3429,16 +3429,16 @@
             "time": "2024-04-02T15:57:53+00:00"
         },
         {
-            "name": "pusher/pusher-php-server",
+            "name": "/-php-server",
             "version": "7.2.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pusher/pusher-http-php.git",
+                "url": "https://github.com//-http-php.git",
                 "reference": "de2f72296808f9cafa6a4462b15a768ff130cddb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/de2f72296808f9cafa6a4462b15a768ff130cddb",
+                "url": "https://api.github.com/repos//-http-php/zipball/de2f72296808f9cafa6a4462b15a768ff130cddb",
                 "reference": "de2f72296808f9cafa6a4462b15a768ff130cddb",
                 "shasum": ""
             },
@@ -3462,21 +3462,21 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Pusher\\": "src/"
+                    "\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Library for interacting with the Pusher REST API",
+            "description": "Library for interacting with the  REST API",
             "keywords": [
                 "events",
                 "messaging",
-                "php-pusher-server",
+                "php--server",
                 "publish",
                 "push",
-                "pusher",
+                "",
                 "real time",
                 "real-time",
                 "realtime",
@@ -3484,8 +3484,8 @@
                 "trigger"
             ],
             "support": {
-                "issues": "https://github.com/pusher/pusher-http-php/issues",
-                "source": "https://github.com/pusher/pusher-http-php/tree/7.2.4"
+                "issues": "https://github.com//-http-php/issues",
+                "source": "https://github.com//-http-php/tree/7.2.4"
             },
             "time": "2023-12-15T10:58:53+00:00"
         },
