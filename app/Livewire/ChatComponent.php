@@ -21,8 +21,8 @@ class ChatComponent extends Component
         return view('livewire.chat-component');
     }
 
-    public function mount($user_id){
-
+    public function mount($user_id)
+    {
         $this->sender_id = auth()->user()->id;
         $this->receiver_id = $user_id;
 
@@ -60,7 +60,8 @@ class ChatComponent extends Component
     }
 
     #[ON('echo-private:chats.{sender_id},MessageSent')]
-    public function listenMessage($event){
+    public function listenMessage($event)
+    {
         // dd($event);
         $chatMess = Message::whereId($event['message']['id'])
         ->with('sender:id,name', 'receiver:id,name')
