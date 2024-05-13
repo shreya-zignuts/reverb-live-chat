@@ -5,8 +5,9 @@ namespace App\Livewire;
 use App\Models\User;
 use App\Models\Message;
 use Livewire\Component;
-use Livewire\Attributes\On;
 use App\Events\MessageSent;
+use Livewire\Attributes\On;
+use Livewire\Attributes\Validate;
 
 class ChatComponent extends Component
 {
@@ -14,6 +15,7 @@ class ChatComponent extends Component
     public $sender_id;
     public $receiver_id;
     public $message = '';
+
     public $messages = [];
 
     public function render()

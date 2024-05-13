@@ -37,11 +37,13 @@
 
         </div>
     </div>
-
     <form wire:submit="sendMessage()">
         <div class="fixed w-full flex justify-between bg-gray-500" style="bottom: 0px;">
             <textarea class="flex-grow m-2 py-2 px-4 mr-1 rounded-full border border-gray-300 bg-gray-200 resize-none"
                 rows="1" wire:model="message" placeholder="Message..." style="outline: none;"></textarea>
+                <div>
+                    @error('message') <span class="error">{{ $message }}</span> @enderror 
+                </div>
             <button class="m-2" type="submit" style="outline: none;">
                 <svg class="svg-inline--fa text-gray-100 fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2" aria-hidden="true"
                     focusable="false" data-prefix="fas" data-icon="paper-plane" role="img"
