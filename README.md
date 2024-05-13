@@ -55,7 +55,7 @@ Step 1: Clone the Repository
 Clone the repository to your local machine using Git (branch - develop)
 
 ```bash
-$ git clone https://github.com/shreya-zignuts/reverb-example.git
+$ git clone https://github.com/shreya-zignuts/reverb-live-chat.git
 ```
 
 Step 2: Navigate to the Project Directory
@@ -63,7 +63,7 @@ Step 2: Navigate to the Project Directory
 Change your current directory to the project directory.
 
 ```bash
-$ cd reverb-example
+$ cd reverb-live-chat
 ```
 
 Step 3: Follow the steps as for creating laravel app
